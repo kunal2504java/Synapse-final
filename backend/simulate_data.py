@@ -12,13 +12,16 @@ NUM_VEHICLES = 10
 SIMULATION_TICK_SECONDS = 5  # Time between new orders
 
 # --- Mock Data ---
-CUSTOMER_NAMES = ["Alice Johnson", "Bob Williams", "Charlie Brown", "Diana Miller", "Ethan Davis", "Fiona Garcia"]
+CUSTOMER_NAMES = ["Priya Sharma", "Rohan Gupta", "Ananya Singh", "Vikram Kumar", "Sneha Patel", "Arjun Reddy", "Aisha Khan", "Sameer Joshi"]
 LOCATIONS = {
-    "New York": (40.7128, -74.0060),
-    "Los Angeles": (34.0522, -118.2437),
-    "Chicago": (41.8781, -87.6298),
-    "Houston": (29.7604, -95.3698),
-    "Phoenix": (33.4484, -112.0740)
+    "Mumbai": (19.0760, 72.8777),
+    "Delhi": (28.7041, 77.1025),
+    "Bangalore": (12.9716, 77.5946),
+    "Chennai": (13.0827, 80.2707),
+    "Kolkata": (22.5726, 88.3639),
+    "Hyderabad": (17.3850, 78.4867),
+    "Pune": (18.5204, 73.8567),
+    "Ahmedabad": (23.0225, 72.5714)
 }
 VEHICLE_STATUSES = ["Idle", "In Transit", "Maintenance"]
 ORDER_STATUSES = ["Processing", "Shipped", "In Transit", "Delivered"]

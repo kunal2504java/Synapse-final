@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import init_db
-from app.api import kpis, anomalies, orders, simulations, warehouses
+from app.api import kpis, anomalies, orders, simulations, warehouses, vehicles
 
 # The database and models will be used later
 # from .database import engine, Base
@@ -46,3 +46,4 @@ app.include_router(anomalies.router, prefix="/api/v1", tags=["Anomalies"])
 app.include_router(orders.router, prefix="/api/v1", tags=["Orders"])
 app.include_router(simulations.router, prefix="/api/v1", tags=["Simulations"])
 app.include_router(warehouses.router, prefix="/api/v1", tags=["Warehouses"])
+app.include_router(vehicles.router, prefix="/api/v1", tags=["Vehicles"])

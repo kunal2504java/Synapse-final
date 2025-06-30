@@ -11,8 +11,8 @@ from .models.models import Order, ShipmentEvent, DeliveryVehicle, Warehouse, Ano
 load_dotenv()
 
 class Settings(BaseModel):
-    mongodb_uri: str = os.getenv("MONGODB_URI", "mongodb://localhost:27017/synapse_db")
-    database_name: str = motor.motor_asyncio.AsyncIOMotorClient(os.getenv("MONGODB_URI", "mongodb://localhost:27017/synapse_db")).get_default_database().name
+    mongodb_uri: str = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
+    database_name: str = os.getenv("DATABASE_NAME", "synapse_db")
 
     class Config:
         env_file = ".env"
